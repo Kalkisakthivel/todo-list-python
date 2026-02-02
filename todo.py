@@ -11,4 +11,12 @@ while True:
     if choice == "1":
         task = input("Enter a new task: ")
         tasks.append(task)
-        print("Task added successfully!")
+        print("Task added successfully!") 
+    elif choice == "2":
+        if not tasks:
+            print("No tasks added yet.")
+        else:
+            print("\nYour Tasks:")
+            for index, task in enumerate(tasks, start=1):
+                print(f"{index}. {task}")
+
