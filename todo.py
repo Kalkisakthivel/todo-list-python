@@ -19,4 +19,10 @@ while True:
             print("\nYour Tasks:")
             for index, task in enumerate(tasks, start=1):
                 print(f"{index}. {task}")
+    elif choice == "3":
+        print("Goodbye! Have a productive day.")
+        break
+    else:
+        print("Invalid choice. Please enter 1, 2, or 3.")
+
 
